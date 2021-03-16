@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+
+/* Variables */
+
+:root{
+    --letterSpacing: .3rem;
+    --sectionPadding: 10px;
+    --font: 'Source Sans Pro', sans-serif;
+    --sectionMargin: 4.5%;
+}
+
+
+
+
+/* Navbar Decoration */ 
+nav{
+    font-family: var(--font);
+    font-weight: normal;
+}
+
+
+
+/* Welcome Section */
+.welcome_sec{
+    margin:1.5% 0 2% 0;
+    width: 100%;
+    display:inline-flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.welcome_text{
+    align-content: center;
+    align-items: center;
+}
+
+.welcome_text h1{
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.welcome_text h5{
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+
+.welcome_text .btn-dark{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 30%;
+    padding:10px;
+    margin: 10% 0 0 35% ;
+    text-align: center;
+    background-color: black;
+    border-radius: 0;
+    border: none;
+}
+
+
+
+
+
+
+
+/* About Section */
+.about_sec{
+    margin:1.5% 2% 2% 0;
+    overflow: hidden;
+    display:inline-flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.about_text{
+    align-content: center;
+    align-items: center;
+}
+
+.about_text h1{
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.about_text p{
+    padding: 30px;
+    text-align: left;
+    font-size: 1.2rem;
+    text-indent: 30px;
+}
+
+
+
+
+
+
+.hours{
+    align-content:  center;
+    align-items: center;
+    margin-top: 2%;
+    background-color: #323133;
+    padding: var(--sectionPadding);
+    color: white;
+}
+
+.hours h1{
+    background-color:  #323133;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+.hours ul{
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #323133;  
+    text-align: center;
+    margin-top: 2%;
+    font-size: 1.2rem;
+}
+
+.hours li{
+    background-color:  #323133;
+    color: white;
+    list-style-type: none;
+    margin-bottom: .5%;
+}
+
+
+
+
+.accepting{
+    text-align: center;
+    padding: var(--sectionPadding);
+    margin: 2% 0 2% 0;
+    background-color: white;
+    color: black;
+}
+
+.accepting h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.accepting p{
+    font-size: 1.2rem;
+    margin-top: 2%;
+}
+
+.accepting .btn-dark{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 12%;
+    padding:10px;
+    text-align: center;
+    background-color: black;
+    border-radius: 0;
+    border: none;
+    margin-top: 1.5%;
+}
+
+
+
+
+
+
+/* UPCOMING EVENTS SECTION */
+.upcoming_events{
+    text-align: center;
+    background-color: #323133;
+    padding: var(--sectionPadding);
+    color: white;
+    background-image: url('');
+    background-position:  top center;
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    display: none;
+
+}
+
+.upcoming_events h1{
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    background-color: #323133;
+    color: white;
+}
+
+.upcoming_events p{
+    background-color: #323133;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+
+
+.pictures{
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.pictures img{
+    margin: 2%;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+
+
+
+@media screen and (max-width: 767px){
+
+
+/* Navbar Decoration */ 
+nav{
+    font-family: var(--font);
+    font-weight: lighter;
+    text-align: center;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav li{
+    margin-bottom: 1%;
+    font-size: 1.3rem;
+}
+
+.dropdown-menu{
+    border: none;
+}
+
+
+/* Welcome Section */
+.welcome_sec{
+    margin:3% 0 2% 0;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.line{
+    width: 90px;
+    border-top: 10px dotted grey;
+}
+
+.welcome_pic{
+    display: none;
+}
+
+.welcome_text{
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin-bottom: 20%;
+}
+
+.welcome_text h1{
+    margin-top: 20%;
+    font-weight: bold;
+    font-size: 3.5rem;
+    background-color: white;
+    color: black;
+}
+
+.welcome_text h5{
+    text-align: center;
+    margin: 5% 0 2% 0;
+    background-color: white;
+    color: black;
+}
+
+.welcome_text .btn-dark{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 30%;
+    padding:15px;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: black;
+    border-radius: 0;
+    border: none;
+}
+
+
+
+
+
+
+
+/* About Section */
+.about_sec{
+    margin:2% 0 2% 0;
+    overflow: hidden;
+    display:inline-flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about_text{
+    align-content: center;
+    align-items: center;
+}
+
+.about_text h1{
+    margin-top:10% ;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.about_text p{
+    text-align: left;
+    font-size: 1.3rem;
+    text-indent: 30px;
+}
+
+
+
+
+
+
+.hours{
+    align-content:  center;
+    align-items: center;
+    margin-top: -2%;
+    background-color: #323133;
+    padding: var(--sectionPadding);
+    color: white;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hours h1{
+    background-color:  #323133;
+    color: white;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin: 10% 0 10% 0%;
+}
+
+.hours ul{
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #323133;  
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 15%;
+}
+
+.hours li{
+    background-color:  #323133;
+    color: white;
+    list-style-type: none;
+    margin-bottom: .5%;
+    font-size: 1.3rem;
+}
+
+
+
+
+.accepting{
+    text-align: center;
+    padding: var(--sectionPadding);
+    margin: 2% 0 10% 0;
+    background-color: white;
+    color: black;
+    width: 100%;
+    overflow: hidden;
+}
+
+.accepting h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.accepting p{
+    font-size: 1.3rem;
+    margin-top: 10%;
+}
+
+.accepting .btn-dark{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 30%;
+    padding:15px;
+    text-align: center;
+    background-color: black;
+    border-radius: 0;
+    border: none;
+    margin-top: 1.5%;
+}
+
+
+
+
+
+
+/* UPCOMING EVENTS SECTION */
+.upcoming_events{
+    text-align: center;
+    background-color: #323133;
+    padding: var(--sectionPadding);
+    color: white;
+    background-image: url('');
+    background-position:  top center;
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    display: none;
+
+}
+
+.upcoming_events h1{
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    background-color: #323133;
+    color: white;
+}
+
+.upcoming_events p{
+    background-color: #323133;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+
+
+.pictures{
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.pictures img{
+    margin: 2%;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+
+}
