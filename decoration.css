@@ -112,13 +112,13 @@ nav{
     align-content:  center;
     align-items: center;
     margin-top: 2%;
-    background-color: #323133;
+    background-color: black;
     padding: var(--sectionPadding);
     color: white;
 }
 
 .hours h1{
-    background-color:  #323133;
+    background-color:  black;
     color: white;
     text-align: center;
     font-size: 4rem;
@@ -128,14 +128,14 @@ nav{
 .hours ul{
     text-decoration: none;
     list-style-type: none;
-    background-color: #323133;  
+    background-color: black;  
     text-align: center;
     margin-top: 2%;
     font-size: 1.2rem;
 }
 
 .hours li{
-    background-color:  #323133;
+    background-color:  black;
     color: white;
     list-style-type: none;
     margin-bottom: .5%;
