@@ -3,6 +3,7 @@
     padding: 0;
     background-color: white;
     color: black;
+    overflow-x: hidden;
 }
 
 
@@ -78,8 +79,6 @@ nav{
 
 /* Navbar Decoration */ 
 nav{
-    width: 100%;
-    overflow: hidden;
     font-weight: normal;
     font-size: 1.4rem;
 }
@@ -104,7 +103,6 @@ nav li{
 
 /* Welcome Section */
 .welcome_sec{
-    width: 100%;
     align-items: center;
     align-content: center;
     margin-bottom: 20%;
@@ -115,6 +113,7 @@ nav li{
     align-items: center;
     width: 100%;
     overflow: hidden;
+    font-weight: lighter;
 }
 
 .welcome_text h1{
@@ -137,7 +136,6 @@ nav li{
     border: none;
     font-size: 1.5rem;
     margin: 2% auto;
-    width: 100%;
 }
 
 .line{
@@ -278,13 +276,13 @@ nav li{
 
 /* About Section */
 .about_sec{
+    width: 100%;
     overflow: hidden;
     display:inline-flex;
     flex-direction:column;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-    width: 100%;
 }
 
 .about_text{
@@ -309,12 +307,10 @@ nav li{
 
 .about_pic{
     overflow: hidden;
-    width: 100%;
 }
 
 .second_p{
     text-align: left;
-    width: 100%;
     overflow: hidden;
 }
 
@@ -421,7 +417,6 @@ nav li{
     margin-top: -2%;
     background-color: black;
     color: white;
-    width: 100%;
     overflow: hidden;
     }
     
@@ -441,12 +436,14 @@ nav li{
     text-align: center;
     margin-top: 2%;
     font-size: 1.3rem;
+    overflow: hidden;
     }
     
 .hours li{
     background-color:  black;
     color: white;
     list-style-type: none;
+    overflow: hidden;
     margin-bottom: .5%;
     }
     
@@ -549,7 +546,6 @@ nav li{
         padding: var(--sectionPadding);
         background-color: white;
         color: black;
-        width: 100%;
         overflow: hidden;
     }
     
@@ -564,7 +560,6 @@ nav li{
         margin-top: 5%;
         font-family: var(--paragraphfont);
         font-weight: bold;
-        width: 100%;
         overflow: hidden;
         
     }
@@ -577,6 +572,7 @@ nav li{
         font-size: 1.5rem;
         margin: 2% auto;
         width: 45%;
+        overflow: hidden;
     }
 
 }
@@ -688,4 +684,5 @@ nav li{
     }
  
 }
+
 
