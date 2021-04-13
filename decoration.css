@@ -1,272 +1,67 @@
 *{
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: black;
-    overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
 }
 
-
-/* Variables */
-:root{
-    --letterSpacing: .3rem;
-    --sectionPadding: 10px;
-    --sectionMargin: 4.5%;
-    --paragraphfont: 'Montserrat', sans-serif;
-}
-
-
-
-
-/* Navbar Decoration */ 
-nav{
-    font-weight: normal;
-    font-size: 1.5rem;
-}
-
-.dropdown-item{
-    font-weight: normal;
-    font-size: 1.5rem;
-}
-
-
-/* Welcome Section */
-.welcome_sec{
-    margin:1.5% 0 2% 0;
-    width: 100%;
-    display:inline-flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-}
-
-.welcome_text{
-    align-content: center;
-    align-items: center;
-}
-
-.welcome_text h1{
-    font-weight: bold;
-    font-size: 5rem;
-    text-align: center;
-}
-
-.welcome_text h5{
-    text-align: center;
-    margin-bottom: 2%;
-
-}
-
-.welcome_text .btn-dark{
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    width: 30%;
-    padding:10px;
-    margin: 10% 0 0 35% ;
-    text-align: center;
-    background-color: black;
-    border-radius: 0;
-    border: none;
-    font-size: 1.5rem;
-}
-
-
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 767px){
-
-/* Navbar Decoration */ 
-nav{
-    font-weight: normal;
-    font-size: 1.4rem;
-}
 
 nav li{
-    text-align: center;
-}
-
-.dropdown-item {
-    font-weight: normal;
-    font-size: 1.3rem;
-    border: none;
+	font-size: 1.2rem;
+	font-weight: normal;
 }
 
 .dropdown-menu{
-    border: none;
+	border: none;
+}
+
+
+.intro{
+	margin-top: 5%;
+	width: 100%;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
 }
 
 .welcome_pic{
-    display: none;
+	padding: 5px;
 }
 
-/* Welcome Section */
-.welcome_sec{
-    align-items: center;
-    align-content: center;
-    margin-bottom: 20%;
+.welcome_pic_two{
+	display: none;
 }
 
-.welcome_text{
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-    font-weight: lighter;
+.welcome_intro{
+	padding: 5px;
 }
 
-.welcome_text h1{
-    margin-top: 10%;
-    font-weight: bold;
-    font-size: 3.5rem;
-    text-align: center;
-}
-
-.welcome_text h5{
-    text-align: center;
-    margin:1% 0 2% 0;
+.welcome_intro h1{
+	font-size: 5rem;
+	font-weight: 1000;
+	margin-bottom: 5%
 
 }
 
-.btn-dark{
-    text-align: center;
-    background-color: black;
-    border-radius: 0;
-    border: none;
-    font-size: 1.5rem;
-    margin: 2% auto;
+.welcome_intro h5{
+	font-weight: normal;
+	margin-bottom: 6%;
 }
 
-.line{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin: 0 auto;
-    border: 1px solid grey;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.welcome_intro button{
+	font-size: 1.3rem;
 }
 
+/* Removing outline from the buttons */
+.btn.active.focus, .btn.active:focus,
+.btn.focus, .btn:active.focus, 
+.btn:active:focus, .btn:focus{
+	outline: none ;
+	box-shadow: none;
+	background: black;
+	color: white;
 }
-
-
-/* Media queries IPAD*/
-@media screen and (min-width: 768px) and (max-width:1023px){
-/* Navbar Decoration */ 
-nav{
-    width: 100%;
-    overflow: hidden;
-    font-weight: normal;
-    font-size: 1.4rem;
-}
-
-nav li{
-    text-align: center;
-}
-
-.dropdown-item {
-    font-weight: normal;
-    font-size: 1.3rem;
-    border: none;
-}
-
-.dropdown-menu{
-    border: none;
-}
-
-.welcome_pic{
-    display: none;
-}
-
-/* Welcome Section */
-.welcome_sec{
-    width: 100%;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 20%;
-}
-
-.welcome_text{
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-}
-
-.welcome_text h1{
-    margin-top: 10%;
-    font-weight: bold;
-    font-size: 4rem;
-    text-align: center;
-}
-
-.welcome_text h5{
-    text-align: center;
-    margin:2% 0 0 0;
-
-}
-
-.btn-dark{
-    text-align: center;
-    background-color: black;
-    border-radius: 0;
-    border: none;
-    font-size: 1.8rem;
-    margin: -1% auto;
-    width: 100%;
-}
-
-.line{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin: 0 auto;
-    border: 1px solid grey;
-    margin-bottom: 5%;
-}
-
-
-}
-
-
-
-
-
-
-
-
-/* About Section */
-.about_sec{
-    margin:1.5% 2% 2% 0;
-    overflow: hidden;
-    display:inline-flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-}
-
-.about_text{
-    align-content: center;
-    align-items: center;
-    width: 55%;
-}
-
-.about_text h1{
-    font-weight: bold;
-    font-size: 4rem;
-    text-align: center;
-}
-
-.about_text p{
-    padding: 25px;
-    text-align: left;
-    font-size: 1.5rem;
-    text-indent: 30px;
-    font-weight: normal;
-}
-
 
 
 
@@ -274,96 +69,158 @@ nav li{
 /* MEDIA QUERIES */
 @media screen and (max-width: 767px){
 
-/* About Section */
-.about_sec{
-    width: 100%;
-    overflow: hidden;
-    display:inline-flex;
-    flex-direction:column;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
+nav li{
+	font-size: 1.2rem;
+	font-weight: normal;
+	text-align: center;
 }
 
-.about_text{
-    align-content: center;
-    align-items: center;
-    width: 100%;
+.dropdown-menu{
+	border: none;
 }
 
-.about_text h1{
-    margin-top: 5%;
-    font-weight: bold;
-    font-size: 4rem;
-    text-align: center;
+
+.intro{
+	margin-top: 10%;
+	width: 100%;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
 }
 
-.about_text p{
-    text-align: left;
-    font-size: 1.5rem;
-    text-indent: 30px;
-    font-weight: normal;
+.welcome_pic{
+	display: none;
+}
+
+.welcome_pic_two{
+	display: block;
+}
+
+.welcome_pic_two img{
+	width: 100%;
+/*	border-radius: 50%;*/
+	margin-top: 20%;
+}
+
+.welcome_intro{
+	padding: 5px;
+}
+
+.welcome_intro h1{
+	font-size: 3rem;
+	font-weight: 1000;
+	margin-bottom: 5%
+
+}
+
+.welcome_intro h5{
+	font-weight: normal;
+	margin-bottom: 10%;
+}
+
+.welcome_intro button{
+	font-size: 1.3rem;
+}
+
+/* Removing outline from the buttons */
+.btn.active.focus, .btn.active:focus,
+.btn.focus, .btn:active.focus, 
+.btn:active:focus, .btn:focus{
+	outline: none ;
+	box-shadow: none;
+	background: black;
+	color: white;
+}
+
+}
+
+
+
+
+
+
+
+
+
+.about{
+	margin-top: 2%;
+	width: 100%;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
 }
 
 .about_pic{
-    overflow: hidden;
+	padding: 10px;
+}
+
+
+.about_intro h1{
+	font-size: 5rem;
+	font-weight: 1000;
+	margin-bottom: 5%
+
+}
+
+.about_intro p{
+	padding: 20px;
+	text-align: left;
+	text-indent: 30px;
+	font-size: 1.2rem;
 }
 
 .second_p{
-    text-align: left;
-    overflow: hidden;
-}
-
+	font-weight: bolder;
 }
 
 
 
-/* Media queries IPAD*/
-@media screen and (min-width: 768px) and (max-width:1023px){
 
-    /* About Section */
-.about_sec{
-    overflow: hidden;
-    display:inline-flex;
-    flex-direction:column;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-}
-
-.about_text{
-    align-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.about_text h1{
-    margin-top: 5%;
-    font-weight: bold;
-    font-size: 4rem;
-    text-align: center;
-}
-
-.about_text p{
-    text-align: left;
-    font-size: 1.5rem;
-    text-indent: 30px;
-    font-weight: normal;
+/* MEDIA QUERIES */
+@media screen and (max-width: 767px){
+.about{
+	margin-top: 20%;
+	width: 100%;
+	overflow: hidden;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
 }
 
 .about_pic{
-    width: fit-content;
-    margin: 0 auto;
+	width: 100%;
+	overflow: none;
+	padding: 0;
+	margin: 0;
+}
+
+.about_intro h1{
+	font-size: 3rem;
+	font-weight: 1000;
+	margin-bottom: 5%;
+
+}
+
+.about_intro p{
+	padding: 20px;
+	text-align: left;
+	text-indent: 30px;
+	font-size: 1.2rem;
 }
 
 .second_p{
-    text-align: left;
-    width: 100%;
-    overflow: hidden;
+	font-weight: bolder;
 }
 
 }
+
+
 
 
 
@@ -373,36 +230,28 @@ nav li{
 
 
 .hours{
-    align-content:  center;
-    align-items: center;
-    margin-top: 1.5%;
-    background-color: black;
-    padding: var(--sectionPadding);
-    color: white;
+	margin-top: 3%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 10px;
 }
 
-.hours h1{
-    background-color:  black;
-    color: white;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    margin-top: 1.5rem;
-}
-.hours ul{
-    text-decoration: none;
-    list-style-type: none;
-    background-color: black;  
-    text-align: center;
-    margin-top: 2%;
-    font-size: 1.5rem;
+.hours_heading h1{
+	font-size: 5rem;
+	font-weight: 1000;
+	margin-bottom: 3%;
 }
 
-.hours li{
-    background-color:  black;
-    color: white;
-    list-style-type: none;
-    margin-bottom: .5%;
+.hours_heading li{
+	text-decoration: none;
+	font-size: 1.3rem;
+	list-style: none;
+	margin-bottom: .5rem;
+}
+
+.closed{
+	color: red;
 }
 
 
@@ -412,81 +261,30 @@ nav li{
 @media screen and (max-width: 767px){
 
 .hours{
-    align-content:  center;
-    align-items: center;
-    margin-top: -2%;
-    background-color: black;
-    color: white;
-    overflow: hidden;
-    }
-    
-.hours h1{
-    background-color:  black;
-    color: white;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-top: 1.5rem;
-    }
-
-.hours ul{
-    text-decoration: none;
-    list-style-type: none;
-    background-color: black;  
-    text-align: center;
-    margin-top: 2%;
-    font-size: 1.3rem;
-    overflow: hidden;
-    }
-    
-.hours li{
-    background-color:  black;
-    color: white;
-    list-style-type: none;
-    overflow: hidden;
-    margin-bottom: .5%;
-    }
-    
-
+	margin-top: -1%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 10px;
 }
 
+.hours_heading h1{
+	font-size: 3rem;
+	font-weight: 1000;
+	margin-bottom: 10%;
+}
 
+.hours_heading li{
+	text-decoration: none;
+	font-size: 1.2rem;
+	list-style: none;
+	margin-bottom: .5rem;
+	text-align: center;
+}
 
-/* Media queries IPAD*/
-@media screen and (min-width: 768px) and (max-width:1023px){
-
-    .hours{
-        align-content:  center;
-        align-items: center;
-        background-color: black;
-        color: white;
-        }
-        
-    .hours h1{
-        background-color:  black;
-        color: white;
-        text-align: center;
-        font-size: 4rem;
-        font-weight: bold;
-        margin-top: 1.5rem;
-        margin-bottom: 5%;
-        }
-    
-    .hours ul{
-        text-decoration: none;
-        list-style-type: none;
-        background-color: black;  
-        text-align: center;
-        margin-top: 2%;
-        font-size: 1.3rem;
-        }
-        
-    .hours li{
-        background-color:  black;
-        color: white;
-        list-style-type: none;
-        margin-bottom: .5%;
-        }
+.closed{
+	color: red;
+}
 
 }
 
@@ -496,40 +294,28 @@ nav li{
 
 
 
-.accepting{
-    text-align: center;
-    padding: var(--sectionPadding);
-    margin: 3% 0 2% 0;
-    background-color: white;
-    color: black;
+
+.upcomingevents{
+	background-image: url("Cornerstoneteam.jpg");
+	background-repeat: none;
+	background-position: top center;
+	background-size: cover;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	color: white;
+	padding: 20px;
 }
 
-.accepting h1{
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 2%;
+.events h1{
+	padding-top: 30px;
+	font-size: 5rem;
+	font-weight: bolder;
 }
 
-.accepting p{
-    font-size: 1.5rem;
-    margin-top: 2%;
-    font-family: var(--paragraphfont);
-    font-weight: bold;
-    
-}
-
-.accepting .btn-dark{
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    width: 12%;
-    padding:10px;
-    text-align: center;
-    background-color: black;
-    border-radius: 0;
-    border: none;
-    margin: 3% 0 4% 0;
-    font-size: 1.5rem;
+.events h5{
+	font-weight: normal;
+	margin-bottom: 2%;
 }
 
 
@@ -537,152 +323,44 @@ nav li{
 
 
 
+
+/*Photo decoration */
+.alert{
+	text-align: center;
+	margin: 10% 0 10% 0 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	text-align: center;
+	margin-top: 1.5%;
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 767px){
 
-    .accepting{
-        text-align: center;
-        padding: var(--sectionPadding);
-        background-color: white;
-        color: black;
-        overflow: hidden;
-    }
-    
-    .accepting h1{
-        font-size: 3rem;
-        font-weight: bold;
-        margin-bottom: 2%;
-    }
-    
-    .accepting p{
-        font-size: 1.3rem;
-        margin-top: 5%;
-        font-family: var(--paragraphfont);
-        font-weight: bold;
-        overflow: hidden;
-        
-    }
-    
-    .accepting .btn-dark{
-        text-align: center;
-        background-color: black;
-        border-radius: 0;
-        border: none;
-        font-size: 1.5rem;
-        margin: 2% auto;
-        width: 45%;
-        overflow: hidden;
-    }
-
+	footer{
+	text-align: center;
+	margin-top: 1.5%;
 }
 
 
-/* Media queries IPAD*/
-@media screen and (min-width: 768px) and (max-width:1023px){
-
-    .accepting{
-        text-align: center;
-        padding: var(--sectionPadding);
-        background-color: white;
-        color: black;
-        width: 100%;
-        overflow: hidden;
-    }
-    
-    .accepting h1{
-        font-size: 4rem;
-        font-weight: bold;
-        margin-bottom: 2%;
-    }
-    
-    .accepting p{
-        font-size: 1.3rem;
-        margin-top: 5%;
-        font-family: var(--paragraphfont);
-        font-weight: bold;
-        width: 100%;
-        overflow: hidden;
-        
-    }
-    
-    .accepting .btn-dark{
-        text-align: center;
-        background-color: black;
-        border-radius: 0;
-        border: none;
-        font-size: 1.5rem;
-        margin: 2% auto;
-        width: 25%;
-    }
 }
-
-
-
-
-/* UPCOMING EVENTS SECTION */
-.upcoming_events{
-    text-align: center;
-    background-color: #323133;
-    padding: var(--sectionPadding);
-    color: white;
-    background-image: url('');
-    background-position:  top center;
-    background-repeat: none;
-    background-size: cover;
-    width: 100%;
-    height: 550px;
-    overflow: hidden;
-    display: none;
-
-}
-
-.upcoming_events h1{
-    font-weight: bold;
-    font-size: 4rem;
-    margin-top: 1.5rem;
-    background-color: #323133;
-    color: white;
-}
-
-.upcoming_events p{
-    background-color: #323133;
-    color: white;
-    font-size: 1.2rem;
-    font-family: var(--paragraphfont);
-    font-weight: normal;
-}
-
-
-
-
-.pictures{
-    align-items: center;
-    text-align: center;
-    padding: 5px;
-    overflow: hidden;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-.pictures img{
-    margin: 2%;
-    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
-}
-
-
-#tema{
-    width: 100%;
-    overflow: hidden;
-}
-
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 767px){
-    #overflowing{
-        display: none;
-    }
- 
-}
-
-
